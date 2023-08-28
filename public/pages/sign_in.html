@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <!-- Fontawesome CDN -->
+    <script src="https://use.fontawesome.com/46b181c364.js"></script>
+    <!-- ======== Link to CSS file ======== -->
+    <link rel="stylesheet" href="../css/sign_in.css" />
+  </head>
+  <body>
+    <!-- ======== Hero Section ======== -->
+    <div class="container">
+      <div class="col col1">
+        <div class="logo">
+          <!-- <img src="./assets/images/logo.png" alt="TGLE Logo" /> -->
+        </div>
+        <div class="description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum esse
+          blanditiis nam quae dignissimos repellat. Accusantium quia dicta
+          possimus distinctio at quas laborum deserunt mollitia tempore iure
+          nemo, soluta, cupiditate reprehenderit.
+        </div>
+      </div>
+
+      <!-- ======== Sign in body section ======== -->
+      <div class="col col2">
+        <h2>Sign in</h2>
+        <form id="form">
+          <div class="input-control">
+            <label for="username">Email</label>
+            <input class="input" type="text" id="email" autocomplete="username"/>
+            <div class="error"></div>
+          </div>
+
+          <div class="input_box input-control">
+            <label for="password">Password</label>
+            <input class="input" type="password" id="password" autocomplete="current-password"/>
+            <span class="eye">
+            <i class="fa fa-solid fa-eye" id="eye" onclick="togglePW()" aria-hidden="true"></i>
+            <!-- <i class="fa fa-solid fa-eye-slash"></i> -->
+          </span>
+          <div class="error"></div>
+          </div>
+
+          <div class="remember">
+            <div class="check">
+              <input type="checkbox" />
+              <p> Remember me </p>
+            </div>
+            <div>
+              <a href="./forgot_password.html">Forgot Password?</a>
+            </div>
+          </div>
+
+          <input type="submit" value="Sign in" />
+        </form>
+                                  <p class="logged_in">Loading..</p>
+
+        <p>No account yet? <span><a href="./sign_up.html">Register</a></p></span>
+      </div>
+    </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+          integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/sign_in.js"></script>
+  </body>
+</html>

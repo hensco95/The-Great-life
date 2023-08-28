@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- ======== Link to CSS file ======== -->
+    <link rel="stylesheet" href="../css/library.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="left-nav">
+        <!-- =========================== Logo ============================== -->
+        <a href="../pages/home_page.html"><div class="logo"></div></a>
+
+        <div class="search-box">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search for videos..."
+            onkeyup="search()"
+          />
+          <i class="fa fa-solid fa-search" id="searchIcon"></i>
+        </div>
+      </div>
+
+      <!-- ========================== User Profile ======================== -->
+      <div class="navLinks" id="myTopnav">
+        <div class="icon" onclick="userToggle()">
+          <div class="profile">
+            <p class=profileName>Emmanuel Okhabu</p>
+            <i class="fa fa-solid fa-user" id="userIcon"></i>
+          </div>
+        </div>
+
+      <!-- =========================== Home ============================== -->
+        <a href="../pages/home_page.html" class="nav-items">
+          <div class="home">
+            <i class="fa fa-solid fa-home"></i>
+            <p>Home</p>
+          </div>
+        </a>
+
+        <!-- ========================= Notification ======================== -->
+        <a href="../pages/notification.html" class="nav-items">
+          <div class="notifications">
+            <i class="fa fa-solid fa-bell" id="bell"></i>
+            <p>Notifications</p>
+          </div>
+        </a>
+
+        <!-- ============================ Logout ============================ -->
+        <a href="/index.html" class="nav-items">
+          <div class="logout">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <p>Logout</p>
+          </div>
+        </a>
+      </div>
+    </nav>
+
+    <section class="mobileSearch">
+      <div class="search-box search-box-mobile">
+        <input
+          type="text"
+          id="search2"
+          placeholder="Search for videos..."
+          onkeyup="search2()"
+        />
+        <i class="fa fa-solid fa-search" id="searchIcon"></i>
+      </div>
+    </section>
+
+    <section class="videoComponent">
+      <div class="videoHeader">
+        <p>Hello! What are you watching today?</p>
+        <h2>All videos</h2>
+      </div>
+      <div class="videoSection">
+
+        <a href="./playhead.html">
+          <div class="videoCard">
+            <div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" />
+            </div>
+            <h4 class="videoTitle">Financial Dominion</h4>
+          </div>
+        </a>
+
+        <a href="./playhead.html">
+          <div class="videoCard">
+            <div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" />
+            </div>
+            <h4 class="videoTitle">Walking in Prophecy</h4>
+          </div>
+        </a>
+
+        <a href="./playhead.html">
+          <div class="videoCard">
+            <div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" />
+            </div>
+            <h4 class="videoTitle">What God Wants</h4>
+          </div>
+        </a>
+
+        <a href="./playhead.html">
+          <div class="videoCard">
+            <div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" />
+            </div>
+            <h4 class="videoTitle">Righteousness</h4>
+          </div>
+        </a>
+        <a href="./playhead.html">
+          <div class="videoCard">
+            <div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" />
+            </div>
+            <h4 class="videoTitle">Kingdom Financiers</h4>
+          </div>
+        </a>
+
+        <a href="./playhead.html">
+          <div class="videoCard">
+            <div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" />
+            </div>
+            <h4 class="videoTitle">A Prolific You</h4>
+          </div>
+        </a>
+
+        <a href="./playhead.html">
+          <div class="videoCard">
+            <div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" />
+            </div>
+            <h4 class="videoTitle">Walking in Dominion</h4>
+          </div>
+        </a>
+
+        <a href="./playhead.html">
+          <div class="videoCard">
+            <div class="videoThumbnail">
+              <img src="../assets/images/cover.jpg" alt="" />
+            </div>
+            <h4 class="videoTitle">Walking in Dominion2</h4>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- <footer class="copyright">
+      <small>Copyright 2023</small>
+    </footer> -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/library.js" type="text/javascript"></script>
+  </body>
+</html>

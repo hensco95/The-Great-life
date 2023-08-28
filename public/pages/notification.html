@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>notifications</title>
+
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- ======== Link to CSS file ======== -->
+    <link rel="stylesheet" href="../css/notification.css" />
+
+    <!-- ======== Link to Javascript file ========= -->
+    <script src="../js/playhead.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="back-arrow">
+        <a href="./library.html">
+          <i class="fa-sharp fa-solid fa-angle-left"></i>
+        </a>
+        <p>Notifications</p>
+      </div>
+
+      <!-- ========================== User Profile ======================== -->
+      <div class="navLinks" id="myTopnav">
+        <div class="icon" onclick="userToggle()">
+          <div class="profile">
+            <p>Emmanuel Okhabu</p>
+            <i class="fa fa-solid fa-user" id="userIcon"></i>
+          </div>
+        </div>
+
+      <!-- =========================== Home ============================== -->
+        <a href="../pages/home_page.html" class="nav-items">
+          <div class="home">
+            <i class="fa fa-solid fa-home"></i>
+            <p>Home</p>
+          </div>
+        </a>
+
+        <!-- ============================ Logout ============================ -->
+        <a href="/index.html" class="nav-items">
+          <div class="logout">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <p>Logout</p>
+          </div>
+        </a>
+      </div>
+    </nav>
+
+    <div class="comment-wrapper">
+      <div class="comment-list">
+        <div class="comments">
+          <div class="time">
+            <p>New</p>
+            <div class="status"></div>
+          </div>
+          <p class="mark-all">Mark all as read</p>
+        </div>
+        <div class="comment-box">
+          <div>
+          <div class="avatar">
+            <img src="../assets/images/logo.png" alt="">
+          </div>
+        </div>
+          <p class="comment">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, repellat eum.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, repellat eum.
+          </p>
+          <div class="delete">
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="comment-list">
+        <div class="comments">
+          <div class="time">
+            <p>Earlier</p>
+            <div class="status"></div>
+          </div>
+        </div>
+        <div class="comment-box">
+          <div>
+          <div class="avatar">
+            <img src="../assets/images/logo.png" alt="">
+          </div>
+        </div>
+          <p class="comment">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, repellat eum.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, repellat eum.
+          </p>
+          <div class="delete">
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+      <div class="comment-list">
+        <div class="comments">
+          <div class="time">
+            <p>6 Hours Ago</p>
+            <div class="status"></div>
+          </div>
+        </div>
+        <div class="comment-box">
+          <div>
+          <div class="avatar">
+            <img src="../assets/images/logo.png" alt="">
+          </div>
+        </div>
+          <p class="comment">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, repellat eum.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, repellat eum.
+          </p>
+          <div class="delete">
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="viewAll">
+        <p class="">Mark all as read</p>
+      </div>
+    </div>
+  </body>
+</html>

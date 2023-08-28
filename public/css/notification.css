@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+body {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+nav {
+  width: 100%;
+  background-color: #692b54;
+  padding: 17px 5%;
+  display: block;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.navLinks {
+  width: 25%;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  z-index: 1;
+}
+.navLinks a {
+  display: none;
+  color: #fad2bc;
+  text-decoration: none;
+  text-align: left;
+  font-size: 14px;
+}
+
+.back-arrow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.back-arrow a {
+  text-decoration: none;
+  color: #fad2bc;
+  font-size: 1.5em;
+}
+.back-arrow p {
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #fad2bc;
+  user-select: none;
+}
+
+.navLinks .icon {
+  margin-top: 20px;
+  margin-right: 20%;
+  float: right;
+  display: block;
+  cursor: pointer;
+}
+
+.navLinks .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #fad2bc;
+  padding: 3px 6px;
+  border-radius: 50px;
+}
+.navLinks .profile p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #692b54;
+  user-select: none;
+}
+.navLinks .profile .fa-user {
+  font-size: 14px;
+  color: #fad2bc;
+  padding: 5px;
+  border-radius: 100px;
+  background-color: #692b54;
+}
+
+.home, .logout,
+.notifications {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 20px;
+  font-size: 1.3em;
+}
+.home {
+  margin-top: 100px;
+}
+.home:hover, .notifications:hover,
+.logout:hover {
+  background-color: #fad2bc;
+  color: #692b54;
+  transition: 0.4s ease;
+}
+
+/* ============== Styling the dropdown ================= */
+.navLinks.responsive {
+  height: 100vh;
+  width: 25%;
+  background-color: #692b54;
+  position: absolute;
+}
+/* .navLinks.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  } */
+.navLinks.responsive .nav-items {
+  float: none;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ================= Comment Section ================ */
+.comment-wrapper {
+  width: 100%;
+  padding: 40px 10%;
+}
+
+.comment-list {
+  margin-bottom: 15px;
+}
+
+.comments {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #692b54;
+}
+
+.time p {
+  font-size: 16px;
+  font-weight: 700;
+  user-select: none;
+}
+
+.time .status {
+  background-color: #692b54;
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+}
+
+.mark-all {
+  color: #692b54;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.comment-box {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  color: #692b54;
+  background-color: #fad2bc;
+  border-radius: 0 20px 20px 20px;
+  display: flex;
+  align-items: top;
+  gap: 10px;
+  box-shadow: 3px 3px 3px #692b54;
+}
+.comment-box .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #692b54;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.comment-box .avatar img {
+  width: 100%;
+  user-select: none;
+}
+.comment-box .comment {
+  word-wrap: balance;
+}
+.delete {
+  display: flex;
+  align-content: center;
+  justify-items: center;
+}
+.fa-xmark {
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.viewAll {
+  width: 100%;
+  margin-top: 20px;
+}
+.viewAll p {
+  color: #692b54;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Media query */
+
+@media screen and (max-width: 1024px) {
+  .navLinks {
+    width: 30%;
+  }
+  .navLinks.responsive {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navLinks {
+    width: 35%;
+  }
+  .navLinks.responsive {
+    width: 35%;
+  }
+  .navLinks .profile p {
+    font-size: 12px;
+  }
+  .home, .logout,
+  .notifications {
+    font-size: 1.2em;
+  }
+  .comment-wrapper {
+    padding: 40px 6%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navLinks {
+    width: 40%;
+  }
+  .navLinks.responsive {
+    width: 40%;
+  }
+  .navLinks .icon {
+    margin-right: 15%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .navLinks {
+    width: 45%;
+  }
+  .navLinks.responsive {
+    width: 45%;
+  }
+  .comment-wrapper {
+    padding: 40px 6%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navLinks {
+    width: 50%;
+  }
+  .navLinks.responsive {
+    width: 50%;
+  }
+  .home {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navLinks {
+    width: 55%;
+  }
+  .navLinks.responsive {
+    width: 55%;
+  }
+  .navLinks .icon {
+    margin-right: 10%;
+  }
+  .comment-box .avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .comment-box .comment {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navLinks {
+    width: 60%;
+  }
+  .navLinks.responsive {
+    width: 60%;
+  }
+  .navLinks .profile p {
+    font-size: 10px;
+  }
+  .navLinks a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navLinks {
+    width: 100%;
+  }
+  .back-arrow p {
+    display: none;
+  }
+  .navLinks.responsive {
+    width: 100%;
+  }
+  .navLinks a {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .navLinks a {
+    font-size: 11px;
+  }
+  .back-arrow {
+    gap: 10px;
+  }
+  .back-arrow a {
+    font-size: 1.5em;
+  }
+
+  .navLinks .icon {
+    margin-right: 7%;
+    margin-top: 20px;
+  }
+  .comments {
+    padding: 0;
+  }
+  .time p {
+    font-size: 14px;
+  }
+  .mark-all {
+    font-size: 16px;
+  }
+  .comment-box {
+    padding: 10px;
+  }
+  .comment-box .avatar {
+    width: 35px;
+    height: 35px;
+  }
+  .comment-box .comment {
+    font-size: 12px;
+  }
+
+  .mark-all {
+    font-size: 14px;
+  }
+  .fa-xmark {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  /* .navLinks .icon {
+  } */
+}
