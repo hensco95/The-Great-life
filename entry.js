@@ -53,7 +53,11 @@ const libraryRoute = require("./routes/library");
 // const welcome = 
 
 // static folder
-app.use(express.static("./public"));
+app.use(
+  express.static("./public", {
+    content_type: "text/html",
+  })
+);
 
 // sanitize data
 app.use(mongoSanitize());
