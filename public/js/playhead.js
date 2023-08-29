@@ -1,5 +1,7 @@
 let videoWrapper = document.querySelector(".videoWrapper");
 let profileName = document.querySelector(".userName");
+let videoTitle = document.querySelector(".videoTitle");
+let ac_body = document.querySelector(".accordion-item-body");
 
 // ========= Nav Links Responsive Toggle ==========
 function userToggle() {
@@ -20,6 +22,8 @@ function getQueryParam(param) {
 const userName = getQueryParam("userName");
 profileName.innerHTML = userName;
 
+const title = getQueryParam("title");
+
 const videoId = getQueryParam("videoId");
 const dataQueryString = getQueryParam("data");
 const data = JSON.parse(decodeURIComponent(dataQueryString));
@@ -30,12 +34,14 @@ const youtubeEmbedURL = `https://www.youtube.com/embed/${videoId}`;
 videoWrapper.innerHTML = `
   <iframe
     width="100%"
-    height="auto"
+    height="300px"
 
     src="${youtubeEmbedURL}"
     frameborder="0"
   ></iframe>`
-;
+  ;
+
+
 
 
 const accordionItemHeaders = document.querySelectorAll(

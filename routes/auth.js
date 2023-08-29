@@ -181,11 +181,11 @@ router.post("/forgotpassword", async (req, res) => {
     "host"
   )}/api/v1/user/resetpassword/${resetToken}`;
 
-  console.log(resetUrl)
+  // console.log(resetUrl)
 
   
 
-  const message = `To reset password, Please make a put request to: \n\n ${resetUrl}`;
+  const message = `To reset password, Please copy this token : ${resetToken} and paste into the reset input field`;
 
   
 
@@ -250,7 +250,7 @@ router.put("/resetpassword", async (req, res) => {
   return res
     .header("auth-token", token)
     .status(200)
-    .json({ msg: "reset password successful", username: user.name, token });
+    .json({ msg: "reset password successful", username: user.name});
 });
 
 
