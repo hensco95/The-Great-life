@@ -54,9 +54,7 @@ const libraryRoute = require("./routes/library");
 
 // static folder
 app.use(
-  express.static("./public", {
-    content_type: "text/html",
-  })
+  express.static("./public")
 );
 
 // sanitize data
